@@ -1,4 +1,4 @@
-# Parei na Parte 2 do GoRails for Beginners
+# Parei na Parte 3 do GoRails for Beginners
 
 This README would normally document whatever steps are necessary to get the
 application up and running.

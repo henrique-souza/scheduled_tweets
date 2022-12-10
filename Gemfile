@@ -76,3 +76,7 @@ gem 'rubocop', '~> 1.40'
 gem 'htmlbeautifier', '~> 1.4'
 
 gem 'ruby-lsp', '~> 0.3.6'
+
+gem "bootstrap", "= 5"
+
+gem "rufo", "~> 0.13.0"

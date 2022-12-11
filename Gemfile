@@ -73,10 +73,12 @@ end
 
 gem 'rubocop', '~> 1.40'
 
-gem 'htmlbeautifier', '~> 1.4'
+gem 'bootstrap', '= 5'
 
-gem 'ruby-lsp', '~> 0.3.6'
+gem 'rufo', '~> 0.13.0'
 
-gem "bootstrap", "= 5"
+gem 'solargraph', '~> 0.47.2'
 
-gem "rufo", "~> 0.13.0"
+gem 'solargraph-rails', '~> 1.1'
+
+gem 'nokogiri', '~> 1.13'

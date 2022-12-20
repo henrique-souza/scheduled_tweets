@@ -84,3 +84,5 @@ gem 'solargraph-rails', '~> 1.1'
 gem 'nokogiri', '~> 1.13'
 
 gem 'ruby-lsp', '~> 0.3.7'
+
+gem "htmlbeautifier", "~> 1.4"

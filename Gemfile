@@ -86,5 +86,3 @@ gem 'nokogiri', '~> 1.13'
 gem 'ruby-lsp', '~> 0.3.7'
 
 gem 'htmlbeautifier', '~> 1.4'
-
-gem 'erb-formatter', '~> 0.3.0'

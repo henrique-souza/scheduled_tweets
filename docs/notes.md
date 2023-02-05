@@ -2,15 +2,6 @@
 
 ## Configurações adicionais do VSCode com as extensões adicionais
 
-```json
-{
-  "solargraph.autoformat": true,
-  "[erb]": {
-    "editor.defaultFormatter": "aliariff.vscode-erb-beautify",
-    "editor.formatOnSave": true
-  },
-  "files.associations": {
-    "*.html.erb": "erb"
-  }
-}
-```
+Tags 'link' e 'script' são as [instalações do Bootstrap 5]( https://getbootstrap.com/docs/5.0/getting-started/introduction/) à pagina.
+
+O 'partial' abaixo quer dizer que não estamos querendo renderizar totalmente alguma coisa. Neste caso, seria o Navbar feito em Bootstrap 5

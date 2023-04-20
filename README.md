@@ -17,7 +17,7 @@ Things you may want to cover:
     <!-- * Run ```rails db:create```
     * Run ```rails db:migrate``` -->
     * Run ```rails s```
-  * Open ```http://{PORT}/coins``` to use
+  * Open ```http://{PORT}``` to use
 
 * Database creation
 

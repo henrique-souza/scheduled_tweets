@@ -1,13 +1,17 @@
 <%= render "shared/icons/svgs" %>
 
-<div class="alert alert-success d-flex align-items-center mt-4" role="alert">
-  <%= render "shared/icons/success" %>
+<% if flash[:notice] %>
+  <div class="alert alert-success d-flex align-items-center mt-4" role="alert">
+    <%= render "shared/icons/success" %>
 
-  <%= flash[:notice] %>
-</div>
+    <%= flash[:notice] %>
+  </div>
+<% end %>
 
-<div class="alert alert-warning d-flex align-items-center mt-4" role="alert">
-  <%= render "shared/icons/warning" %>
+<% if flash[:alert] %>
+  <div class="alert alert-warning d-flex align-items-center mt-4" role="alert">
+    <%= render "shared/icons/warning" %>
 
-  <%= flash[:alert] %>
-</div>
+    <%= flash[:alert] %>
+  </div>
+<% end %>

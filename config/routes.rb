@@ -9,5 +9,7 @@ Rails.application.routes.draw do
 
   # get '/', to: 'main#index'
 
+  get 'sign_up', to: 'registrations#new'
+
   root to: 'main#index'
 end

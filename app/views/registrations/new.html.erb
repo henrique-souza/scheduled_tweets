@@ -16,12 +16,11 @@
     special characters, or emoji", class:"form-text" %>
   <% end %>
 
-
   <%= content_tag :div, class: "mb-3" do %>
     <%= f.label :password_confirmation, class: "form-label" %>
     <%= f.password_field :password_confirmation, class: "form-control", placeholder: "**********" %>
     <%= f.label "Confirm your password", class:"form-text" %>
-   <% end %>
+  <% end %>
 
   <%= f.submit "Sign Up", class: "btn btn-primary" %>
 <% end %>

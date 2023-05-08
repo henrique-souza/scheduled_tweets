@@ -12,7 +12,7 @@ class RegistrationsController < ApplicationController
     if @user.valid?
       redirect_to root_path, notice: 'Successfully created account'
     else
-      render :new, status: 422
+      render :new, status: :unprocessable_entity
     end
   end
 

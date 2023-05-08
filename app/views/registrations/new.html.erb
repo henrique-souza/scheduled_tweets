@@ -5,7 +5,10 @@
   <% if @user.errors.any? %>
     <%= content_tag :div, class: "alert alert-danger" do %>
       <% @user.errors.full_messages.each do |message| %>
-        <%= content_tag :div, message %>
+        <%= content_tag :div do %>
+          <%= render "shared/icons/warning" %>
+          <%= message %>
+        <% end %>
       <% end %>
     <% end %>
   <% end %>

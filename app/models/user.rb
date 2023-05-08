@@ -9,12 +9,12 @@ class User < ApplicationRecord
   has_secure_password
 
   PASSWORD_REGEX = /\A
-                    (?=.{8,})
-                    (?=.*\d)
-                    (?=.*[a-z])F
-                    (?=.*[A-Z])
-                    (?=.*[[:^alnum:]])
-                    /x
+                   (?=.{8,})
+                   (?=.*\d)
+                   (?=.*[a-z])F
+                   (?=.*[A-Z])
+                   (?=.*[[:^alnum:]])
+                   /x
 
   validates :email,
             presence: true,

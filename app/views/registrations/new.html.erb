@@ -2,6 +2,14 @@
 
 <%= form_with model: @user, url: sign_up_path do |f| %>
 
+  <% if @user.errors.any? %>
+    <%= content_tag :div, class: "alert alert-danger" do %>
+      <% @user.errors.full_messages.each do |message| %>
+        <%= content_tag :div, message %>
+      <% end %>
+    <% end %>
+  <% end %>
+
   <%= content_tag :div, class: "mb-3" do %>
     <%= f.label :email, class: "form-label" %>
     <%= f.text_field :email, class: "form-control", placeholder: "example@domain.com" %>

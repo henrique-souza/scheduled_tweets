@@ -22,9 +22,9 @@
   <%= content_tag :div, class: "mb-3" do %>
     <%= f.label :password, class: "form-label" %>
     <%= f.password_field :password, class: "form-control", placeholder: "**********" %>
-    <%= f.label "Your password must be 8-20 characters long,
-    contain letters and numbers, and must not contain spaces,
-    special characters, or emoji", class:"form-text" %>
+    <%= f.label "Your password must be 8 characters long,
+    contain letters and numbers, spaces and
+    special characters", class:"form-text" %>
   <% end %>
 
   <%= content_tag :div, class: "mb-3" do %>

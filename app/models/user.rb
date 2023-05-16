@@ -14,5 +14,5 @@ class User < ApplicationRecord
             uniqueness: true
 
   validates :password,
-            length: { in: 8..100 }
+            length: { in: 8..200 }
 end

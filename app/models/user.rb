@@ -13,6 +13,7 @@ class User < ApplicationRecord
             format: { with: /\A[\w.+-]+@\w+\.\w+\z/, on: :create },
             uniqueness: true
 
+  # pelo visto dá pra deixar uma senha de tamanho infinito
   validates :password,
-            length: { in: 8..200 }
+            length: { in: 8..Float::INFINITY }
 end

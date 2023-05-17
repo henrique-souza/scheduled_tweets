@@ -1,7 +1,4 @@
  <%= content_tag :div, class:"d-flex align-items-center justify-content-center" do %>
   <%= tag.h1 'Welcome to Scheduled Tweets'%>
-
-  <% if @user %>
-    Logged in as <%= @user.email %>
-  <% end %>
+  <%= render "sessions/sessions" %>
 <% end %>

@@ -1,21 +1,21 @@
 <ul class="navbar-nav ms-auto text-white" >
 
   <% if Current.user %>
-    <%= content_tag :div, class: "d-flex align-items-center justify-content-center container-fluid" do %>
-      <%= Current.user.email %>
+  <%= content_tag :div, class: "d-flex align-items-center justify-content-center container-fluid" do %>
+    <%= Current.user.email %>
+  <% end %>
+
+  <%= content_tag :li, class:"nav-item" do %>
+    <%= button_to 'Logout', logout_path, method: :delete, class: "btn btn-danger" %>
+  <% end %>
+
+  <% else %>
+    <%= content_tag :li, class:"nav-item" do %>
+      <%= link_to 'Sign Up', sign_up_path, class: "nav-link" %>
     <% end %>
 
-  <li class="nav-item">
-    <%= button_to 'Logout', logout_path, method: :delete, class: "btn btn-danger" %>
-  </li>
-  <% else %>
-
-  <li class="nav-item">
-    <%= link_to 'Sign Up', sign_up_path, class: "nav-link" %>
-  </li>
-
-  <li class="nav-item">
-    <%= link_to 'Login', sign_in_path, class: "nav-link" %>
-  </li>
+    <%= content_tag :li, class:"nav-item" do %>
+      <%= link_to 'Login', sign_in_path, class: "nav-link" %>
+    <% end %>
   <% end %>
 </ul>

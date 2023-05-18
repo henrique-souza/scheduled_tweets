@@ -10,6 +10,9 @@ class User < ApplicationRecord
 
   validates :email,
             presence: true,
-            format: { with: /\A[\w.+-]+@\w+\.\w+\z/, on: :create },
+            format: { with: URI::MailTo::EMAIL_REGEXP, on: :create },
             uniqueness: true
+
+  validates :password,
+            length: { in: 8..Float::INFINITY }
 end

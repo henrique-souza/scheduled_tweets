@@ -81,5 +81,3 @@ gem 'rufo', '~> 0.13.0'
 gem 'solargraph', '~> 0.47.2'
 
 gem 'solargraph-rails', '~> 1.1'
-
-gem 'htmlbeautifier', '~> 1.4'

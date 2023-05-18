@@ -1,0 +1,18 @@
+<%= tag.h1 'Sign In'%>
+
+<%= form_with url: sign_in_path do |f| %>
+
+  <%= content_tag :div, class: "mb-3" do %>
+    <%= f.label :email, class: "form-label" %>
+    <%= f.text_field :email, class: "form-control", placeholder: "example@domain.com" %>
+    <%# <%= f.label "We'll never share your email with anyone else", class:"form-text" %>
+  <% end %>
+
+  <%= content_tag :div, class: "mb-3" do %>
+    <%= f.label :password_confirmation, class: "form-label" %>
+    <%= f.password_field :password_confirmation, class: "form-control", placeholder: "**********" %>
+    <%# <%= f.label "Confirm your password", class:"form-text" %>
+  <% end %>
+
+  <%= f.submit "Sign In", class: "btn btn-primary" %>
+<% end %>

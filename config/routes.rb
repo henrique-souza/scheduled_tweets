@@ -11,6 +11,8 @@ Rails.application.routes.draw do
 
   get 'about', to: 'about#index'
 
+  get 'profile', to: 'profile#show'
+
   get 'password', to: 'passwords#edit', as: :edit_password
   patch 'password', to: 'passwords#update'
 

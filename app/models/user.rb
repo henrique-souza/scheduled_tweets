@@ -14,5 +14,6 @@ class User < ApplicationRecord
             uniqueness: true
 
   validates :password,
+            presence: true,
             length: { in: 8..Float::INFINITY }
 end

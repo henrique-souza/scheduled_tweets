@@ -2,7 +2,7 @@
 
   <% if Current.user %>
     <%= content_tag :div, class: "d-flex align-items-center justify-content-center container-fluid" do %>
-      <%= link_to Current.user.email, edit_password_path %>
+      <%= link_to Current.user.email, profile_path %>
     <% end %>
 
     <%= content_tag :li, class:"nav-item" do %>

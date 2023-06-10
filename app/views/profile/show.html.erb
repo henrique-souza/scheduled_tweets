@@ -1,0 +1,9 @@
+<%= tag.h1 'Profile'%>
+
+<%= content_tag :div, class: "mb-3" do %>
+  <%= Current.user.email %>
+<% end %>
+
+<%= content_tag :div, class: "mb-3" do %>
+  <%= link_to 'Edit password', edit_password_path %>
+<% end %>

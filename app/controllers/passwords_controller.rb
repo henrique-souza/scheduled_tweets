@@ -16,6 +16,8 @@ class PasswordsController < ApplicationController
 
   private
 
+  # teste lvim
+
   def password_params
     params.require(:user).permit(:password, :password_confirmation)
   end

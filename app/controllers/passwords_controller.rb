@@ -14,6 +14,8 @@ class PasswordsController < ApplicationController
     end
   end
 
+  # testando autenticação do Git
+
   private
 
   def password_params

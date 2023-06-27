@@ -7,8 +7,9 @@
     <%= f.text_field :email, class: "form-control", placeholder: "example@domain.com" %>
   <% end %>
 
-  <%= content_tag :div, class: "mb-3" do %>
+  <%= content_tag :div, class: "position-relative mb-3" do %>
     <%= f.label :password_confirmation, class: "form-label" %>
+    <%= render 'password_resets/new' %>
     <%= f.password_field :password_confirmation, class: "form-control", placeholder: "**********" %>
   <% end %>
 

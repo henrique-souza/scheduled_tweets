@@ -15,5 +15,6 @@ class User < ApplicationRecord
 
   validates :password,
             presence: true,
-            length: { in: 8..Float::INFINITY }
+            confirmation: true,
+            length: { minimum: 8 }
 end

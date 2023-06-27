@@ -16,8 +16,6 @@ class PasswordsController < ApplicationController
 
   private
 
-  # aplicando mais um teste
-  #
   def password_params
     params.require(:user).permit(:password, :password_confirmation)
   end

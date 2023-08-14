@@ -6,6 +6,7 @@ class ApplicationController < ActionController::Base
 
   def set_current_user
     # aqui tinha um 'if session...' que estava condicionando o código abaixo
+    #
     # return faz o mesmo papel do if anterior, mas com mais clareza.
     # Se a condição do unless for true, nem vai passar do return.
     return unless session[:user_id]

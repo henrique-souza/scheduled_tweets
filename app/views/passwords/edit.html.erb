@@ -12,9 +12,9 @@
       <% end %>
     <% end %>
   <% end %>
- 
+
   <%= content_tag :div, class: "mb-3" do %>
-    <%= f.label :password, class: "form-label" %>
+    <%= f.label 'New password', class: "form-label" %>
     <%= f.password_field :password, class: "form-control", placeholder: "**********" %>
     <%= f.label "Your password must be 8 characters long,
     contain letters and numbers, spaces and
@@ -22,7 +22,7 @@
   <% end %>
 
   <%= content_tag :div, class: "mb-3" do %>
-    <%= f.label :password_confirmation, class: "form-label" %>
+    <%= f.label 'New password confirmation', class: "form-label" %>
     <%= f.password_field :password_confirmation, class: "form-control", placeholder: "**********" %>
     <%= f.label "Confirm your password", class:"form-text" %>
   <% end %>

@@ -1,4 +1,4 @@
-# Parei na Parte 22 do GoRails for Beginners
+# Parei na Parte 23 do GoRails for Beginners
 
 ## Configurações adicionais do VSCode com as extensões adicionais
 

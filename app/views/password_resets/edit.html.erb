@@ -1,0 +1,31 @@
+<%= tag.h1 "Edit your password" %>
+
+<%= form_with model: @user, url: password_reset_edit_path(token: params[:token]) do |f| %>
+
+  <% if f.object.errors.any? %>
+    <%= content_tag :div, class: "alert alert-danger" do %>
+      <% f.object.errors.full_messages.each do |message| %>
+        <%= content_tag :div do %>
+          <%= render "shared/icons/warning" %>
+          <%= message %>
+        <% end %>
+      <% end %>
+    <% end %>
+  <% end %>
+
+  <%= content_tag :div, class: "mb-3" do %>
+    <%= f.label 'New password', class: "form-label" %>
+    <%= f.password_field :password, class: "form-control", placeholder: "**********" %>
+    <%= f.label "Your password must be 8 characters long,
+    contain letters and numbers, spaces and
+    special characters", class:"form-text" %>
+  <% end %>
+
+  <%= content_tag :div, class: "mb-3" do %>
+    <%= f.label 'New password confirmation', class: "form-label" %>
+    <%= f.password_field :password_confirmation, class: "form-control", placeholder: "**********" %>
+    <%= f.label "Confirm your password", class:"form-text" %>
+  <% end %>
+
+  <%= f.submit "Reset", class: "btn btn-secondary" %>
+<% end %>

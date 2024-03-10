@@ -83,3 +83,7 @@ gem 'solargraph', '~> 0.47.2'
 gem 'solargraph-rails', '~> 1.1'
 
 gem 'htmlbeautifier', '~> 1.4'
+
+gem "omniauth-twitter", "~> 1.4"
+
+gem "omniauth-rails_csrf_protection", "~> 1.0"

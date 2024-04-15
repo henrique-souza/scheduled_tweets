@@ -329,6 +329,7 @@ DEPENDENCIES
   htmlbeautifier (~> 1.4)
   importmap-rails
   jbuilder
+  omniauth (~> 2.1)
   omniauth-rails_csrf_protection (~> 1.0)
   omniauth-twitter (~> 1.4)
   puma (~> 5.0)
